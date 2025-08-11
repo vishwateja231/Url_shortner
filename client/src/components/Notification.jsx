@@ -18,7 +18,7 @@ export default function Notification({ message, type = 'success', duration = 300
     const icon = type === 'success' ? '✓' : '✕'
 
     return (
-        <div className={`fixed top-4 right-4 z-50 ${bgColor} text-white px-6 py-4 rounded-lg shadow-lg flex items-center gap-3 animate-slide-in`}>
+        <div className={`fixed top-4 right-4 z-[9999] ${bgColor} text-white px-6 py-4 rounded-lg shadow-lg flex items-center gap-3 animate-slide-in`}>
             <span className="text-xl">{icon}</span>
             <span className="font-medium">{message}</span>
             <button 
